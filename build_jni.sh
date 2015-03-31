@@ -1,5 +1,7 @@
 #!/bin/sh
-
+cd android-ndk-r10d
+export ANDROID_NDK_HOME=`pwd`
+cd ..
 cd jni
 ./installswig.sh
 
