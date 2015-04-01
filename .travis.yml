@@ -1,0 +1,2 @@
+before_script: git submodule init && git submodule update
+script: ./do_the_job.sh
