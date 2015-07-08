@@ -19,7 +19,8 @@ Credits to:
   ```bash
   $ ./do_the_job.sh
   ```
-3. Build JNI for Linux instead of Android.
+  
+3. Build JNI for Linux instead of Android:
   ```bash
   $ ./do_the_job.sh linux
   ```
