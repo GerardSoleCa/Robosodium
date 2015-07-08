@@ -41,6 +41,10 @@ public class Sodium {
     return SodiumJNI.crypto_box_curve25519xsalsa20poly1305_keypair(pk, sk);
   }
 
+  public static int crypto_box_curve25519xsalsa20poly1305_seed_keypair(byte[] pk, byte[] sk, byte[] seed) {
+    return SodiumJNI.crypto_box_curve25519xsalsa20poly1305_seed_keypair(pk, sk, seed);
+  }
+
   public static void randombytes(byte[] buf, int size) {
     SodiumJNI.randombytes(buf, size);
   }

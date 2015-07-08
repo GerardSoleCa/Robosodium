@@ -124,6 +124,9 @@ int crypto_pwhash_scryptsalsa208sha256(unsigned char * const out,
 int crypto_box_curve25519xsalsa20poly1305_keypair(unsigned char *pk,
                                                   unsigned char *sk);
 
+int crypto_box_curve25519xsalsa20poly1305_seed_keypair(unsigned char *pk, unsigned char *sk,
+                        const unsigned char *seed);
+
 void        randombytes(unsigned char *buf, unsigned long long size);
 /* void        randombytes(unsigned char * const buf, const unsigned long long buf_len); */
 

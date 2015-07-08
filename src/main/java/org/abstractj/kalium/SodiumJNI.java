@@ -17,6 +17,7 @@ public class SodiumJNI {
   public final static native int crypto_generichash_blake2b(byte[] jarg1, long jarg2, byte[] jarg3, int jarg4, byte[] jarg5, long jarg6);
   public final static native int crypto_pwhash_scryptsalsa208sha256(byte[] jarg1, int jarg2, byte[] jarg3, int jarg4, byte[] jarg5, int jarg6, long jarg7);
   public final static native int crypto_box_curve25519xsalsa20poly1305_keypair(byte[] jarg1, byte[] jarg2);
+  public final static native int crypto_box_curve25519xsalsa20poly1305_seed_keypair(byte[] jarg1, byte[] jarg2, byte[] jarg3);
   public final static native void randombytes(byte[] jarg1, int jarg2);
   public final static native int crypto_box_curve25519xsalsa20poly1305(byte[] jarg1, byte[] jarg2, int jarg3, byte[] jarg4, byte[] jarg5, byte[] jarg6);
   public final static native int crypto_box_curve25519xsalsa20poly1305_open(byte[] jarg1, byte[] jarg2, int jarg3, byte[] jarg4, byte[] jarg5, byte[] jarg6);
