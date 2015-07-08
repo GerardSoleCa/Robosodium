@@ -19,13 +19,23 @@ Credits to:
   ```bash
   $ ./do_the_job.sh
   ```
+3. Build JNI for Linux instead of Android.
+  ```bash
+  $ ./do_the_job.sh linux
+  ```
+4. Where to find the compiled libs:
+  ```bash
+  cd libs # Libs for Android using the architecture dirs
+  cd linux_lib # Lib for Linux. To be used copy to /usr/lib for example. Or just place anywhere you want
+  ```
 
-3. If something goes wrong or you want to run again some parts of the compilation, just call the following scripts:
+5. If something goes wrong or you want to run again some parts of the compilation, just call the following scripts:
   ```bash
   do_the_job.sh # Start and run all the scripts
   install_software.sh # First update aptitude cache and install necessary packages
+  build_jni_linux.sh # Build libsodium with jni for linux.
   download_ndk.sh # Download the required Android NDK
-  build_libsodium.sh # Compile Libsodium for Android
+  build_android_libsodium.sh # Compile Libsodium for Android
   build_jni.sh # Generate the JNI library (*.so)
   ```
 
