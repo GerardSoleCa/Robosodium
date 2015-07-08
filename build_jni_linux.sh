@@ -8,7 +8,7 @@ mkdir linux_lib
 cd libsodium
 
 echo "Configuring prefix"
-./autogen
+./autogen.sh
 ./configure --prefix=`pwd`/../linux_lib
 make && make check && make install
 
