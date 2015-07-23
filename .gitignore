@@ -4,4 +4,11 @@
 **/libs/*
 **/linux_lib/*
 **/swig-2.0.10*
+
+.gradle
 .idea
+build
+local.properties
+*.iml
+*.class
+**/jniLibs
