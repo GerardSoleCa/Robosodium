@@ -5,10 +5,10 @@ rm -rf libsodium
 git submodule init
 git submodule update
 
-cd android-ndk-r10d
-export ANDROID_NDK_HOME=`pwd`
+#cd android-ndk-r10d
+#export ANDROID_NDK_HOME=`pwd`
 
-cd ..
+#cd ..
 cd libsodium
 ./autogen.sh
 ./dist-build/android-arm.sh
