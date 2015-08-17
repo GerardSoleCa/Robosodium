@@ -89,4 +89,8 @@ public class Sodium {
     return SodiumJNI.crypto_stream_xsalsa20_xor(c, m, mlen, n, k);
   }
 
+  public static int crypto_core_hsalsa20(byte[] out, byte[] in, byte[] k, byte[] c) {
+    return SodiumJNI.crypto_core_hsalsa20(out, in, k, c);
+  }
+
 }
