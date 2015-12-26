@@ -182,3 +182,6 @@ int crypto_stream_xsalsa20(unsigned char *c, unsigned long long clen,
 int crypto_stream_xsalsa20_xor(unsigned char *c, const unsigned char *m,
                   unsigned long long mlen, const unsigned char *n,
                   const unsigned char *k);
+
+int crypto_core_hsalsa20(unsigned char *out, const unsigned char *in,
+                         const unsigned char *k, const unsigned char *c);

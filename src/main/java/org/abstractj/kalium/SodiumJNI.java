@@ -29,4 +29,5 @@ public class SodiumJNI {
   public final static native int crypto_sign_ed25519_open(byte[] jarg1, int[] jarg2, byte[] jarg3, int jarg4, byte[] jarg5);
   public final static native int crypto_stream_xsalsa20(byte[] jarg1, int jarg2, byte[] jarg3, byte[] jarg4);
   public final static native int crypto_stream_xsalsa20_xor(byte[] jarg1, byte[] jarg2, int jarg3, byte[] jarg4, byte[] jarg5);
+  public final static native int crypto_core_hsalsa20(byte[] jarg1, byte[] jarg2, byte[] jarg3, byte[] jarg4);
 }
