@@ -40,6 +40,18 @@ Credits to:
   build_jni.sh # Generate the JNI library (*.so)
   ```
 
+#### Build AAR
+
+On Linux, simply run:
+```bash
+$ ./build_aar
+```
+
+On OS X, ensure that you have SWIG, Android SDK and NDK installed, and your `JAVA_HOME`, `ANDROID_HOME`, `ANDROID_NDK_HOME` set, then run:
+```bash
+$ ./build_aar_osx
+```
+
 ### License
 
 Each part has its own software license, including:
