@@ -10,12 +10,14 @@ cd libsodium
 ./dist-build/android-armv7-a.sh
 ./dist-build/android-mips32.sh
 ./dist-build/android-x86.sh
+cd ..
 
 # Build JNI
 cd jni
 ./compile.sh
 export PATH=$PATH:$ANDROID_NDK_HOME
 ndk-build
+cd ..
 
 # Build AAR
 rm -R src/main/jniLibs/
