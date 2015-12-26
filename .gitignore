@@ -12,3 +12,5 @@ local.properties
 *.iml
 *.class
 **/jniLibs
+src/main/java/org/abstractj/kalium/Sodium.java
+src/main/java/org/abstractj/kalium/SodiumJNI.java
