@@ -8,7 +8,15 @@ buildscript {
     }
 }
 
+ext {
+    if (LOCAL.toBoolean()) {
+        RELEASE_REPOSITORY_URL = "file://${System.getProperty("user.home")}/.m2/repository"
+        SNAPSHOT_REPOSITORY_URL = "file://${System.getProperty("user.home")}/.m2/repository/snapshots"
+    }
+}
+
 apply plugin: 'com.android.library'
+apply from: 'https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle'
 
 android {
     compileSdkVersion 22

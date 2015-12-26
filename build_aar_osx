@@ -22,4 +22,4 @@ cd ..
 # Build AAR
 rm -R src/main/jniLibs/
 cp -R libs src/main/jniLibs
-./gradlew clean build
+./gradlew clean build uploadArchives
