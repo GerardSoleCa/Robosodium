@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# Build Libsodium and JNI
+./do_the_job.sh
+
+# Build AAR
+rm -R src/main/jniLibs/
+cp -R libs src/main/jniLibs
+./gradlew clean build uploadArchives

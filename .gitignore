@@ -4,3 +4,13 @@
 **/libs/*
 **/linux_lib/*
 **/swig-2.0.10*
+
+.gradle
+.idea
+build
+local.properties
+*.iml
+*.class
+**/jniLibs
+src/main/java/org/abstractj/kalium/Sodium.java
+src/main/java/org/abstractj/kalium/SodiumJNI.java
