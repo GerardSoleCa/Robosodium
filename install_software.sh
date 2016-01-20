@@ -1,4 +1,13 @@
 #!/bin/sh
-echo "Password for: apt-get update and apt-get install git build-essential libtool automake openjdk-7-jdk maven ruby libpcre3-dev"
-sudo apt-get update
-sudo apt-get install git build-essential libtool automake openjdk-7-jdk maven ruby libpcre3-dev
+echo "Installing needed Brew components..."
+brew update
+brew install wget
+brew install git
+brew install build-essential
+brew install libtool
+brew install automake
+brew install openjdk-7-jdk
+brew install pcre
+brew install maven
+brew install ruby
+brew install libpcre3-dev

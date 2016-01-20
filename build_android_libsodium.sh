@@ -1,11 +1,13 @@
 #!/bin/sh
+echo "building libsodium"
 
+# disable this for faster build
 rm -rf libsodium
 
 git submodule init
 git submodule update
 
-cd android-ndk-r10d
+cd android-ndk-r10e
 export ANDROID_NDK_HOME=`pwd`
 
 cd ..

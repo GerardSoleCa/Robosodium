@@ -1,5 +1,5 @@
 #!/bin/sh
-cd android-ndk-r10d
+cd android-ndk-r10e
 export ANDROID_NDK_HOME=`pwd`
 cd ..
 cd jni
