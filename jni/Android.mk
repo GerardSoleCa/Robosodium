@@ -34,6 +34,10 @@ ifeq ($(TARGET_ARCH_ABI), mips)
 	LOCAL_SRC_FILES := ../libsodium/libsodium-android-mips32/lib/libsodium.a
 endif
 
+ifeq ($(TARGET_ARCH_ABI), x86_64)
+	LOCAL_SRC_FILES := ../libsodium/libsodium-android-x86-64/lib/libsodium.a
+endif
+
 include $(PREBUILT_STATIC_LIBRARY)
 
 include $(CLEAR_VARS)

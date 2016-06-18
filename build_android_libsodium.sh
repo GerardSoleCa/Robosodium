@@ -15,3 +15,4 @@ cd libsodium
 ./dist-build/android-armv7-a.sh
 ./dist-build/android-mips32.sh
 ./dist-build/android-x86.sh
+./dist-build/android-x86-64.sh
